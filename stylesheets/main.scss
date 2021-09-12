@@ -1,0 +1,91 @@
+@import './config';
+@import './responsive';
+
+body {
+    background: $darkCyan  url(../images/bg-pattern-top.svg) no-repeat ;
+}
+
+.main {
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+}
+
+.pattern {
+    background-image: url(../images/bg-pattern-card.svg);
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px 15px 0 0;
+}
+
+.profile__picture img {
+    border: 5px solid white;
+    outline: none;
+    border-radius: 50%;
+    margin-top: -2.8rem;
+    display: block;
+}
+
+.name {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: $veryDarkDesaturatedBlue;
+
+    .profile__age {
+        margin-left: 0.5rem;
+        font-weight: 400;
+        font-size: initial;
+        color: $darkGray;
+    }
+}
+
+.profile__location{
+    margin-top: 0.5rem;
+    color: $darkGray;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.light-line {
+    height: 1px;
+    width: 100%;
+    background: $darkGray;
+}
+
+.profile__metrics {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile__followers, .profile__likes, .profile__photos {
+    font-weight: 700;
+    font-size: 18px;
+    color: $veryDarkDesaturatedBlue;
+    text-align: center;
+    margin: 0 auto;
+    // margin-right: 2rem;
+
+    .metric {
+        display: block;
+        font-weight: 400;
+        color: $darkGray;
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+}
